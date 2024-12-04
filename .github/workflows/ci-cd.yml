@@ -30,7 +30,7 @@ jobs:
         run: pnpm install --production
 
       - name: Build with PNPM
-        run: npm run build
+        run: pnpm run build
 
       - name: Login to Docker Hub
         if: github.ref == 'refs/heads/main'
